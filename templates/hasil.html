@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>We Found Your Pokemon!</title>
+    <style>
+        body,html{height: 100%;}
+        body{background-image: url(https://wallup.net/wp-content/uploads/2017/11/17/301412-Pokemon-748x421.jpg);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;}
+    
+    </style>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <br><br><br><br><br><br><br><br>
+    <center><h1><b><div class="card-panel teal lighten-2">{{ data['name'] }}</div></b></h1></center>
+    <center><img src="{{ data['img'] }}" widht="250" height="250"alt="{{ data['name'] }}"></center>
+    <center><div class="card-panel teal lighten-2"><i class="material-icons">assignment_ind</i> <b></b> {{ data['id'] }}</b></div>
+        <div class="card-panel teal lighten-2"><i class="material-icons">arrow_upward</i>{{ data['height'] }}</div>
+        <div class="card-panel teal lighten-2"><i class="material-icons">restaurant</i>{{ data['weight'] }}</div></center><br><br>
+    <form>
+        <center><input type="button" onclick="location.href='http://127.0.0.1:5000/'" value="Kembali" class="waves-effect waves-light btn"><i class="material-icons">arrow_back</i></center>
+    </form>
+</body>
+</html>
